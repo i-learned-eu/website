@@ -1,0 +1,27 @@
+projects:
+  blog:
+    description: Vous trouverez sur ce blog l’ensemble des articles d’I Learned !
+    uri: https://blog.ilearned.eu
+    image: /static/img/projects/blog-light.png
+  analytics:
+    description: I Learned analytics est un dashboard alternatif pour Goaccess permettant de consulter les statistiques des différents sites d’I Learned.
+    uri: https://analytics.ilearned.eu
+    image: /static/img/projects/analytics-light.png
+  wiki:
+    description: Vous souhaitez contribuer à I Learned ? Ou juste vous renseigner sur le fonctionnement interne ? Rendez-vous sur le wiki !
+    uri: https://wiki.ilearned.eu
+    image: /static/img/projects/wiki-light.png
+
+contributions:
+  design:
+    name: 🖌️ Design system
+    contributors: Eban, llaq
+    uri: https://gitlab.ilearned.eu/i-learned/design-system
+
+contributors:
+  Eban:
+    uri: https://eban.eu.org
+    image: https://eban.eu.org/static/img/icon.svg
+  llaq:
+    uri: https://lelibreauquotidien.fr/
+    image: /static/img/contributors/llaq.webp
