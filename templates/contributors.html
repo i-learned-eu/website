@@ -32,7 +32,7 @@
             <div class="contributorsContainer">
               {% for contributor in contributions[contribution].contributors.split(', ') %}
                 <div class="contributor">
-                  <img src="{{ contributors[contributor].image }}" alt="">
+                  <img src="{{ contributors[contributor].image }}" alt="Image de profile de {{contributions[contribution].name}}">
                   <a href="{{ contributors[contributor].uri }}">{{ contributor }}</a>
                 </div>
               {% endfor %}
