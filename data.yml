@@ -21,7 +21,31 @@ contributions:
 contributors:
   Eban:
     uri: https://eban.eu.org
-    image: https://eban.eu.org/static/img/icon.svg
+    image: /static/img/contributors/eban.svg
+  Ramle:
+    uri: https://ramle.be
+    image: /static/img/contributors/ramle.webp
   llaq:
     uri: https://lelibreauquotidien.fr/
     image: /static/img/contributors/llaq.webp
+  Lancelot:
+    uri: https://theredwindows.net/
+    image: /static/img/contributors/lancelot.webp
+  MorpheusH3x:
+    uri: https://twitter.com/MorpheusH3x
+    image: /static/img/contributors/morpheush3x.webp
+  Ownesis:
+    uri: https://github.com/ownesis
+    image: /static/img/contributors/ownesis.webp
+  Immae:
+    uri: https://www.immae.eu/
+    image: /static/img/contributors/immae.webp
+  Outout:
+    uri: https://enpls.org/
+    image: /static/img/contributors/outout.webp
+  Rick:
+    uri: https://gyiwr.tf/
+    image: /static/img/contributors/rick.webp
+  Akinimaginable:
+    uri: https://github.com/Akinimaginable
+    image: /static/img/contributors/akinimaginable.webp
