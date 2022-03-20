@@ -17,6 +17,22 @@ contributions:
     name: 🖌️ Design system
     contributors: Eban, llaq
     uri: https://gitlab.ilearned.eu/i-learned/design-system
+  blog:
+    name: 📝 Blog
+    contributors: Eban, Ramle, llaq, Ownesis, Rick, MorpheusH3x, Akinimaginable 
+    uri: https://gitlab.ilearned.eu/i-learned/blog
+  blog:
+    name: 🔄 CI/CD
+    contributors: Eban, Ramle
+    uri: https://gitlab.ilearned.eu/i-learned/ci-cd
+  blog:
+    name: 🖥️ Labs
+    contributors: Eban, llaq, Ownesis
+    uri: https://gitlab.ilearned.eu/i-learned/lab
+  blog:
+    name: 📄 Wiki
+    contributors: Eban
+    uri: https://gitlab.ilearned.eu/i-learned/wiki
 
 contributors:
   Eban:
