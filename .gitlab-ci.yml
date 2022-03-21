@@ -27,7 +27,7 @@ linter:
 pages:
   stage: pages
   script:
-    - apk add gcc python3-dev linux-headers musl-dev g++
+    - apk add gcc python3-dev linux-headers musl-dev g++ py3-pip
     - pip3 install -r requirements.txt
     - python3 build.py
   artifacts:
