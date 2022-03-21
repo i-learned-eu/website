@@ -5,7 +5,7 @@ default:
 
 stages:
   - lint
-  - pages
+  - deploy
 
 linter:
   stage: lint
@@ -24,12 +24,23 @@ linter:
   only:
     - main
 
-pages:
-  stage: pages
+prod-deploy-job:
+  stage: deploy
   script:
-    - apk add gcc python3-dev linux-headers musl-dev g++ py3-pip
-    - pip3 install -r requirements.txt
-    - python3 build.py
+    - apk add --no-cache wget tar
+    - wget https://github.com/tdewolff/minify/releases/download/v2.10.0/minify_linux_amd64.tar.gz
+    - tar -xf minify_linux_amd64.tar.gz -C /tmp
+    - /tmp/minify --html-keep-comments -r -o ./ ./
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$SSH_KEY" > ~/.ssh/id_ed25519
+    - chmod 600 ~/.ssh/id_ed25519
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - rsync -az --exclude=".git*" --delete -e "ssh -p 53453 -i ~/.ssh/id_ed25519" ./ ci@web.ramle.be:/var/www/beta.ilearned.eu
+
+  only:
+    - main
+
   artifacts:
     paths:
       - output
