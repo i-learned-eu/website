@@ -2,15 +2,15 @@ projects:
   blog:
     description: Vous trouverez sur ce blog l’ensemble des articles d’I Learned !
     uri: https://blog.ilearned.eu
-    image: /static/img/projects/blog-light.png
+    image: /static/img/projects/blog-light.webp
   analytics:
     description: I Learned analytics est un dashboard alternatif pour Goaccess permettant de consulter les statistiques des différents sites d’I Learned.
     uri: https://analytics.ilearned.eu
-    image: /static/img/projects/analytics-light.png
+    image: /static/img/projects/analytics-light.webp
   wiki:
     description: Vous souhaitez contribuer à I Learned ? Ou juste vous renseigner sur le fonctionnement interne ? Rendez-vous sur le wiki !
     uri: https://wiki.ilearned.eu
-    image: /static/img/projects/wiki-light.png
+    image: /static/img/projects/wiki-light.webp
 
 contributions:
   blog:
