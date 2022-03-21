@@ -27,7 +27,7 @@ pages-deploy:
   image: hub.ilearned.eu/i-learned/ci-cd/pelican-builder
   stage: pages-deploy
   script:
-    - apk add gcc python3-dev
+    - apk add gcc python3-dev linux-headers
     - pip3 install -r requirements.txt
     - python3 build.py
   artifacts:
