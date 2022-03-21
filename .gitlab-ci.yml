@@ -1,5 +1,5 @@
 default:
-  image: node:latest
+  image: alpine:latest
   tags:
     - AMD64
 
@@ -9,6 +9,7 @@ stages:
 
 linter:
   stage: lint
+  image: node:latest
   allow_failure: true
   script:
     - npm install -g prettier sass-lint
