@@ -1,6 +1,8 @@
 from staticjinja import Site
 from distutils.dir_util import copy_tree
 import yaml
+import sass
+import os
 
 with open("./data.yml", 'r') as data:
     try:
@@ -10,7 +12,10 @@ with open("./data.yml", 'r') as data:
             outpath="output",
             )
         site.render()
-        copy_tree("static/", "output/")
+        os.mkdir("output/static")
+        copy_tree("static", "output/static")
+        sass.compile(dirname=('output/static/sass',
+                     'output/static/css'), output_style='compressed')
         print("🤩 Rendered site")
     except yaml.YAMLError as exc:
         print("😢 Unable to load data file", exc)

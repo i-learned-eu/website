@@ -1,6 +1,7 @@
 from staticjinja import Site
 from distutils.dir_util import copy_tree
 import yaml
+import sass
 
 with open("./data.yml", 'r') as data:
     try:
