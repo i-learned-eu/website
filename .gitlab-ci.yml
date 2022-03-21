@@ -27,7 +27,7 @@ linter:
 prod-deploy-job:
   stage: deploy
   script:
-    - apk add --no-cache wget tar
+    - apk add --no-cache wget tar rsync openssh-client
     - wget https://github.com/tdewolff/minify/releases/download/v2.10.0/minify_linux_amd64.tar.gz
     - tar -xf minify_linux_amd64.tar.gz -C /tmp
     - /tmp/minify --html-keep-comments -r -o ./ ./
