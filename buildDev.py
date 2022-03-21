@@ -9,7 +9,7 @@ with open("./data.yml", 'r') as data:
             env_globals=parsedData,
             outpath="output",
             )
-        site.render()
+        site.render(use_reloader=True)
         copy_tree("static/", "output/")
         print("🤩 Rendered site")
     except yaml.YAMLError as exc:
