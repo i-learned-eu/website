@@ -5,6 +5,7 @@ default:
 
 stages:
   - lint
+  - pages-deploy
 
 linter:
   stage: lint
@@ -21,3 +22,16 @@ linter:
 
   only:
     - main
+
+pages-deploy:
+	image: hub.ilearned.eu/i-learned/ci-cd/pelican-builder
+	stage: pages-deploy
+	script:
+    - pip3 install -r requierements.txt
+		- python3 build.py
+  artifacts:
+    paths:
+      - output
+
+	only:
+		- main
