@@ -6,7 +6,7 @@ default:
 stages:
   - lint
 
-prettier:
+linter:
   stage: lint
   allow_failure: true
   script:
@@ -19,4 +19,5 @@ prettier:
     - git commit -m "[🧹 Lint] Linted code"
     - git push https://CI_CD:$CI_GIT_USER_PASSWD@gitlab.ilearned.eu/i-learned/website.git HEAD:master
 
-  only: main
+  only:
+    - main
