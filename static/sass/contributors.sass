@@ -20,7 +20,7 @@ main
       text-transform: capitalize
       margin: 40px auto
     .card
-      width: 400px
+      width: 500px
       padding: 30px
       h2
         text-align: center
@@ -28,9 +28,11 @@ main
       .contributorsContainer
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
       .contributor
         margin: 10px
         display: inline
+        width: calc(50% - 20px)
         img
           height: 48px
           border-radius: 10px
@@ -38,5 +40,5 @@ main
         a
           color: var(--text-color)
           vertical-align: middle
-          font-size: 20px
+          font-size: 17px
           margin-left: 10px

@@ -1,2 +1,5 @@
 output/
 venv/
+*.css
+*.css.map
+.sass-cache
