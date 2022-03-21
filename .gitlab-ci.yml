@@ -28,7 +28,6 @@ prod-deploy-job:
   stage: deploy
   script:
     - apk add --no-cache wget tar rsync openssh-client py3-pip python3-dev gcc linux-headers musl-dev g++
-
     - pip3 install -r requirements.txt
     - python3 build.py
     - wget https://github.com/tdewolff/minify/releases/download/v2.10.0/minify_linux_amd64.tar.gz
@@ -39,7 +38,7 @@ prod-deploy-job:
     - echo "$SSH_KEY" > ~/.ssh/id_ed25519
     - chmod 600 ~/.ssh/id_ed25519
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    - rsync -az --exclude=".git*" --delete -e "ssh -p 53453 -i ~/.ssh/id_ed25519" ./ ci@web.ramle.be:/var/www/beta.ilearned.eu
+    - rsync -az --exclude=".git*" --delete -e "ssh -p 53453 -i ~/.ssh/id_ed25519" output/ ci@web.ramle.be:/var/www/beta.ilearned.eu
 
   only:
     - main
