@@ -1,0 +1,30 @@
+default:
+  image: node:latest
+  tags:
+    - AMD64
+
+stages:
+  - html-lint
+  - sass-lint
+
+prettier:
+  stage: html-lint
+  allow_failure: true
+  script:
+    - npm install -g prettier
+    - prettier templates/ -w
+
+  only:
+    - main
+sass-lint:
+  stage: sass-lint
+  script:
+    - npm install -g sass-lint
+    - sass-lint static/sass/*.sass
+    - git add .
+    - git config --global user.email "contact@ilearned.eu"
+    - git config --global user.name "Gitlab CI"
+    - git commit -m "[🧹 Lint] Linted code"
+    - git push https://CI_CD:$CI_GIT_USER_PASSWD@gitlab.ilearned.eu/i-learned/website.git HEAD:master
+
+  only: main
