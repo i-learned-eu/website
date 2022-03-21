@@ -4,22 +4,14 @@ default:
     - AMD64
 
 stages:
-  - html-lint
-  - sass-lint
+  - lint
 
 prettier:
-  stage: html-lint
+  stage: lint
   allow_failure: true
   script:
-    - npm install -g prettier
+    - npm install -g prettier sass-lint
     - prettier templates/ -w
-
-  only:
-    - main
-sass-lint:
-  stage: sass-lint
-  script:
-    - npm install -g sass-lint
     - sass-lint static/sass/*.sass
     - git add .
     - git config --global user.email "contact@ilearned.eu"
