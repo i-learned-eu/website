@@ -30,18 +30,28 @@
           <div class="card">
             <h2>{{contributions[contribution].name}}</h2>
             <div class="contributorsContainer">
-              {% for contributor in contributions[contribution].contributors.split(', ') %}
-                <div class="contributor">
-                  <img src="{{ contributors[contributor].image }}" alt="Image de profile de {{contributions[contribution].name}}">
-                  <a href="{{ contributors[contributor].uri }}">{{ contributor }}</a>
-                </div>
+              {% for contributor in
+              contributions[contribution].contributors.split(', ') %}
+              <div class="contributor">
+                <img
+                  src="{{ contributors[contributor].image }}"
+                  alt="Image de profile de {{contributions[contribution].name}}"
+                />
+                <a href="{{ contributors[contributor].uri }}"
+                  >{{ contributor }}</a
+                >
+              </div>
               {% endfor %}
             </div>
           </div>
-          <a href="{{ contributions[contribution].uri }}" class="btn btn-primary">👉 Contribuer</a>
+          <a
+            href="{{ contributions[contribution].uri }}"
+            class="btn btn-primary"
+            >👉 Contribuer</a
+          >
         </div>
-      {% endfor %}
-    </div>
-  </main>
-</body>
+        {% endfor %}
+      </div>
+    </main>
+  </body>
 </html>
