@@ -15,7 +15,7 @@ projects:
 contributions:
   blog:
     name: 📝 Blog
-    contributors: Eban, Ramle, llaq, Ownesis, Rick, MorpheusH3x, Akinimaginable
+    contributors: Eban, Ramle, Ownesis, Rick, MorpheusH3x, Akinimaginable
     uri: https://gitlab.ilearned.eu/i-learned/blog
   ci_cd:
     name: 🔄 CI/CD
