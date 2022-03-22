@@ -1,7 +1,7 @@
 default:
   image: alpine:latest
   tags:
-    - ARM
+    - AMD64
 
 stages:
   - lint
