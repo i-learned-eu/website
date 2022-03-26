@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdn.ilearned.eu/css/base.min.css" />
-    <link rel="stylesheet" href="static/css/index.css" />
-    <link rel="shortcut icon" href="static/img/logo.svg" />
-    <link rel="shortcut icon" href="static/img/logo.png" />
-    <title>I Learned</title>
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <div class="left">
-          <img src="static/img/logo.svg" alt="Logo de I Learned" />
-          <h2>I Learned</h2>
-        </div>
-      </a>
-      <div class="right">
-        <a href="/">💭 À Propos</a>
-        <a href="projects.html">🚧 Projets</a>
-        <a href="contributors.html">👥 Contributeur·ices</a>
-      </div>
-    </header>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.ilearned.eu/css/base.min.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="shortcut icon" href="static/img/logo.svg" />
+  <link rel="shortcut icon" href="static/img/logo.png" />
+  <title>I Learned</title>
+</head>
+
+<body>
+  <header>
+    <svg alt="Icone du menu" onclick="openMenu()" id="menuIcon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="m21 17c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1h-18c-.55228475 0-1-.4477153-1-1s.44771525-1 1-1zm0-6c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1h-18c-.55228475 0-1-.4477153-1-1s.44771525-1 1-1zm0-6c.5522847 0 1 .44771525 1 1s-.4477153 1-1 1h-18c-.55228475 0-1-.44771525-1-1s.44771525-1 1-1z"
+        fill-rule="evenodd" />
+    </svg>
+    <a href="/">
       <div class="left">
-        <h1>💭 À propos</h1>
-        <p>
-          I Learned est un projet visant à rendre accessible au plus grand
-          nombre l’informatique au travers de mediums diversifiés. I Learned
-          compte à ce jour 9 contributeur·ices !
-        </p>
-        <a href="projects.html" class="btn btn-primary">👉 Les projets</a>
-        <div class="socials">
-          <a
-            href="https://discord.gg/ZyWUJYSc3C"
-            class="btn btn-secondary social"
-            ><img src="static/img/discord.webp" alt="Discord logo"
-          /></a>
-          <a
-            href="https://toot.gnous.eu/@ilearned"
-            class="btn btn-secondary social"
-            ><img src="static/img/mastodon.webp" alt="Mastodon logo"
-          /></a>
-          <a
-            href="https://twitter.com/ilearned_eu"
-            class="btn btn-secondary social"
-            ><img src="static/img/twitter.webp" alt="Twitter logo"
-          /></a>
-        </div>
+        <img src="static/img/logo.svg" alt="Logo de I Learned" />
+        <h2>I Learned</h2>
       </div>
-      <div class="right">
-        <div class="illus"></div>
+    </a>
+    <div class="right" id="right">
+      <a href="/">💭 À Propos</a>
+      <a href="projects.html">🚧 Projets</a>
+      <a href="contributors.html">👥 Contributeur·ices</a>
+    </div>
+  </header>
+  <main>
+    <div class="left">
+      <h1>💭 À propos</h1>
+      <p>
+        I Learned est un projet visant à rendre accessible au plus grand
+        nombre l’informatique au travers de mediums diversifiés. I Learned
+        compte à ce jour 9 contributeur·ices !
+      </p>
+      <a href="projects.html" class="btn btn-primary">👉 Les projets</a>
+      <div class="socials">
+        <a href="https://discord.gg/ZyWUJYSc3C" class="btn btn-secondary social"><img src="static/img/discord.webp" alt="Discord logo" /></a>
+        <a href="https://toot.gnous.eu/@ilearned" class="btn btn-secondary social"><img src="static/img/mastodon.webp" alt="Mastodon logo" /></a>
+        <a href="https://twitter.com/ilearned_eu" class="btn btn-secondary social"><img src="static/img/twitter.webp" alt="Twitter logo" /></a>
       </div>
-    </main>
-  </body>
+    </div>
+    <div class="right">
+      <div class="illus"></div>
+    </div>
+  </main>
+</body>
+<script src="static/js/menu.js" charset="utf-8"></script>
 </html>

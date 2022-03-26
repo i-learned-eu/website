@@ -1,3 +1,6 @@
+header
+  #menuIcon
+    display: none
 main
   margin: auto
   width: 80vw
@@ -55,6 +58,15 @@ main
       width: 100%
 
 @media only screen and (max-width: 500px)
+  header
+    #menuIcon
+      display: flex
+      color: var(--text-color)
+      fill: currentColor
+    .right
+      display: none
+      a
+        break-after: always
   main .left .socials
     float: none
     margin-top: 15px
