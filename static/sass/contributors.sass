@@ -1,3 +1,6 @@
+header
+  #menuIcon
+    display: none
 h1
   text-align: center
   margin: 70px 0 20px 0
@@ -55,3 +58,13 @@ main
     margin-left: -5px
     .contributor
       width: 100%
+@media only screen and (max-width: 500px)
+  header
+    #menuIcon
+      display: flex
+      color: var(--text-color)
+      fill: currentColor
+    .right
+      display: none
+      a
+        break-after: always
