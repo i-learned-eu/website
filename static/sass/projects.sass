@@ -44,6 +44,14 @@ main
       display: flex
       color: var(--text-color)
       fill: currentColor
+    .right a
+      color: var(--cta-normal-color)
+      font-weight: 600
+      &:not(:last-of-type)::after
+        content: ""
+        color: var(--text-color)
+        font-weight: bolder
+        pointer-events: none
     .right
       display: none
       a
