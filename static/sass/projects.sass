@@ -1,6 +1,3 @@
-header
-  #menuIcon
-    display: none
 h1
   text-align: center
   margin: 70px 0 20px 0
@@ -38,21 +35,3 @@ main
     height: 43vw
     margin-right: 0
     margin-left: -13px
-@media only screen and (max-width: 500px)
-  header
-    #menuIcon
-      display: flex
-      color: var(--text-color)
-      fill: currentColor
-    .right a
-      color: var(--cta-normal-color)
-      font-weight: 600
-      &:not(:last-of-type)::after
-        content: ""
-        color: var(--text-color)
-        font-weight: bolder
-        pointer-events: none
-    .right
-      display: none
-      a
-        break-after: always
