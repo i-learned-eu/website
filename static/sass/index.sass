@@ -1,15 +1,16 @@
 main
-  margin: auto
+  margin: 0 auto !important
   width: 80vw
   max-width: 1300px
   display: flex
   align-items: center
   position: absolute
-  top: 89px
+  top: 50%
   bottom: 0
   left: 0
   right: 0
   height: max-content
+  transform: translateY(calc(-50% - 99px))
   .left
     h1
       font-size: 40px
@@ -49,7 +50,6 @@ main
 
 @media only screen and (max-width: 1060px)
   main
-    position: initial
     margin-top: 89px
     .right
       display: none
