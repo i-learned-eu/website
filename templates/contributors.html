@@ -42,7 +42,7 @@
               contributions[contribution].contributors.split(', ') %}
               <div class="contributor">
                 <img
-                  src="https://cdn.ilearned.eu/img/contributors/{{ contributors[contributor].name | lower }}.webp"
+                  src="https://cdn.ilearned.eu/img/contributors/{{ contributor | lower }}.webp"
                   alt="Image de profile de {{contributions[contribution].name}}"
                 />
                 <a href="{{ contributors[contributor].uri }}"
