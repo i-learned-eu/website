@@ -37,7 +37,7 @@ prod-deploy-job:
     - echo "$SSH_KEY" > ~/.ssh/id_ed25519
     - chmod 600 ~/.ssh/id_ed25519
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    - rsync -az --exclude=".git*" --delete -e "ssh -p 53453 -i ~/.ssh/id_ed25519" output/ ci@web.ramle.be:/var/www/beta.ilearned.eu
+    - rsync -az --exclude=".git*" --delete -e "ssh -p 22 -i ~/.ssh/id_ed25519" output/ deploy@eban.eu.org:/var/www/ilearned
 
   only:
     - main
