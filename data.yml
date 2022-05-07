@@ -11,6 +11,10 @@ projects:
     description: Vous souhaitez contribuer à I Learned ? Ou juste vous renseigner sur le fonctionnement interne ? Rendez-vous sur le wiki !
     uri: https://wiki.ilearned.eu
     image: /static/img/projects/wiki-light.webp
+  status:
+    description: Ce service permet d'être alerté au cas où un des autres service d'I Learned venait à ne pas être disponible
+    uri: https://status.ilearned.eu
+    image: /static/img/projects/status-light.webp
 
 contributions:
   blog:
