@@ -1,17 +1,21 @@
-    <section id="projects">
-      <h1>💻 Projets</h1>
-      <p>Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci sont distribués sous licence libre, principalement CC-BY-NC-SA pour les contenus et AGPL pour le code.</p>
-      <div class="projects">
-        {% for project in projects %}
-        <div class="cardContainer">
-          <div class="card">
-            <img src="{{ projects[project].image }}" alt="" />
-          </div>
-          <p>{{ projects[project].description }}</p>
-          <a href="{{ projects[project].uri }}" class="btn btn-secondary"
-            >👉 {{ project }}</a
-          >
-        </div>
-        {% endfor %}
+<section id="projects">
+  <h1>💻 Projets</h1>
+  <p>
+    Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci sont
+    distribués sous licence libre, principalement CC-BY-NC-SA pour les contenus
+    et AGPL pour le code.
+  </p>
+  <div class="projects">
+    {% for project in projects %}
+    <div class="cardContainer">
+      <div class="card">
+        <img src="{{ projects[project].image }}" alt="" />
       </div>
-    </section>
+      <p>{{ projects[project].description }}</p>
+      <a href="{{ projects[project].uri }}" class="btn btn-secondary"
+        >👉 {{ project }}</a
+      >
+    </div>
+    {% endfor %}
+  </div>
+</section>
