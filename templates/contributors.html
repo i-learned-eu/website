@@ -3,19 +3,21 @@
   <p>{% trans %}Vous trouverez ci-dessous la liste des contibuteur·ice·s avec les différents projets auxquels iels ont participé.{% endtrans %}</p>
   <div class="contributors">
     {% for contributor in contributors %}
-        <div class="card">
-          <h2>
-            <img src="{{ contributors[contributor].image }}" alt="">
-            <a href="{{ contributors[contributor].uri }}">{{ contributor }}</a>
-          </h2>
-          <div class="contributionsContainer">
-          {% for contribution in contributors[contributor].projects.split(', ') %}
-            <div class="contribution">
-              <a href="{{ contributions[contribution].uri }}">{{ contributions[contribution].name }}</a>
-            </div>
-          {% endfor %}
-          </div>
+    <div class="card">
+      <h2>
+        <img src="{{ contributors[contributor].image }}" alt="" />
+        <a href="{{ contributors[contributor].uri }}">{{ contributor }}</a>
+      </h2>
+      <div class="contributionsContainer">
+        {% for contribution in contributors[contributor].projects.split(', ') %}
+        <div class="contribution">
+          <a href="{{ contributions[contribution].uri }}"
+            >{{ contributions[contribution].name }}</a
+          >
         </div>
+        {% endfor %}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>

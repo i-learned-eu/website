@@ -14,4 +14,11 @@
         </div>
         {% endfor %}
       </div>
-    </section>
+      <p>{{ projects[project].description }}</p>
+      <a href="{{ projects[project].uri }}" class="btn btn-secondary"
+        >👉 {{ project }}</a
+      >
+    </div>
+    {% endfor %}
+  </div>
+</section>
