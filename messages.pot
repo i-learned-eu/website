@@ -1,0 +1,67 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-06-18 16:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: templates/about.html:5 templates/head.html:22 templates/head.html:26
+msgid ""
+"I Learned est un projet visant à rendre accessible au plus grand nombre "
+"l’informatique au travers de mediums diversifiés. I Learned compte à ce "
+"jour 14 contributeur·ices !"
+msgstr ""
+
+#: templates/about.html:7
+msgid "Les projets"
+msgstr ""
+
+#: templates/about.html:13
+msgid "https://toot.gnous.eu/@ilearned"
+msgstr ""
+
+#: templates/about.html:18
+msgid "https://twitter.com/ilearned_eu"
+msgstr ""
+
+#: templates/contributors.html:2
+msgid "Contributions"
+msgstr ""
+
+#: templates/contributors.html:3
+msgid ""
+"Vous trouverez ci-dessous la liste des contibuteur·ice·s avec les "
+"différents projets auxquels iels ont participé."
+msgstr ""
+
+#: templates/header.html:15
+msgid "À Propos"
+msgstr ""
+
+#: templates/header.html:16 templates/projects.html:2
+msgid "Projets"
+msgstr ""
+
+#: templates/header.html:17
+msgid "Contributeur·ices"
+msgstr ""
+
+#: templates/projects.html:3
+msgid ""
+"Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci sont "
+"distribués sous licence libre, principalement CC-BY-NC-SA pour les "
+"contenus et AGPL pour le code."
+msgstr ""
+
