@@ -9,7 +9,7 @@ stages:
 
 linter:
   stage: lint
-  image: node:latest
+  image: hub.ilearned.eu/i-learned/ci-cd/website-builder
   allow_failure: true
   script:
     - npm install -g prettier sass-lint
