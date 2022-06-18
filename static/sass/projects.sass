@@ -1,17 +1,27 @@
-h1
-  text-align: center
-  margin: 70px 0 20px 0
-  font-size: 40px
+section#projects, section#contributors
+  margin: 0 auto
+  padding-top: 100px
+  width: 75vw
 
-main
-  margin: 0 100px
+  h1
+    margin: 70px 0 20px 0
+    font-size: 40px
+  p:not(.cardContainer p)
+    font-weight: 500
+    margin: 30px 0
+    max-width: 50%
+    color: var(--text-120-color)
 
 .projects
   display: flex
-  justify-content: space-around
-  flex-wrap: wrap
+  gap: 50px
+  overflow-x: auto
+  width: calc(100% + 25vw)
+  padding-left: 12.5vw
+  margin-left: -12.5vw
+  padding-bottom: 20px
+  padding-right: 25px
   .cardContainer
-    margin-top: 50px
     width: min-content
     display: inline-block
     vertical-align: top
@@ -29,9 +39,22 @@ main
       opacity: 90%
 
 @media only screen and (max-width: 1060px)
-  main
-    margin: 0 20px
-  .projects .cardContainer .card
-    height: 43vw
-    margin-right: 0
-    margin-left: -13px
+  h1
+    overflow-wrap: anywhere
+    font-size: 36px !important
+  #projects, #contributors
+    p:not(.cardContainer p)
+      max-width: 100% !important
+  #projects
+    .card
+      height: 20vh
+  .contributors
+    flex-wrap: nowrap !important
+    padding-right: 25px
+    overflow-x: auto
+    width: calc(100% + 25vw)
+    padding-left: 12.5vw
+    margin-left: -12.5vw
+    .card
+      flex-grow: 0
+      flex-shrink: 0

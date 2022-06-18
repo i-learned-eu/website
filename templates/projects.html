@@ -1,57 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdn.ilearned.eu/css/base.min.css" />
-    <link rel="stylesheet" href="static/css/projects.css" />
-    <link rel="shortcut icon" href="static/img/logo.svg" />
-    <link rel="shortcut icon" href="static/img/logo.png" />
-    <meta
-      name="keywords"
-      content="developpeur, networking, réseau, today I learned, developper, infosec, hacking, pentest, pentesting, blog, privacy, vie privée, github"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="I Learned" />
-    <meta property="og:image:width" content="1000" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta charset="UTF-8" />
-    <meta
-      property="og:description"
-      content="I Learned est un projet visant à rendre accessible au plus grand nombre l’informatique au travers de mediums diversifiés. I Learned compte à ce jour 14 contributeur·ices !"
-    />
-    <meta
-      property="description"
-      content="I Learned est un projet visant à rendre accessible au plus grand nombre l’informatique au travers de mediums diversifiés. I Learned compte à ce jour 14 contributeur·ices !"
-    />
-    <meta property="og:url" content="https://ilearned.eu/" />
-    <meta property="og:image" content="/static/img/illus.png" />
-    <meta property="og:locale" content="fr_FR" />
-    <title>I Learned</title>
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <div class="left">
-          <img src="static/img/logo.svg" alt="Logo de I Learned" />
-          <h2>I Learned</h2>
-        </div>
-      </a>
-      <div onclick="openMenu()" id="menuIcon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="right">
-        <a href="/">ℹ À Propos</a>
-        <a href="projects.html">💻 Projets</a>
-        <a href="contributors.html">👥 Contributeur·ices</a>
-      </div>
-    </header>
-    <main>
-      <h1>🚧 Projets</h1>
+    <section id="projects">
+      <h1>💻 Projets</h1>
+      <p>Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci sont distribués sous licence libre, principalement CC-BY-NC-SA pour les contenus et AGPL pour le code.</p>
       <div class="projects">
         {% for project in projects %}
         <div class="cardContainer">
@@ -65,7 +14,4 @@
         </div>
         {% endfor %}
       </div>
-    </main>
-  </body>
-  <script src="https://cdn.ilearned.eu/js/header.js" charset="utf-8"></script>
-</html>
+    </section>

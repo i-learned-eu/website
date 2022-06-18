@@ -19,57 +19,57 @@ projects:
 contributions:
   blog:
     name: 📝 Blog
-    contributors: Eban, Ramle, Ownesis, Rick, MorpheusH3x, Akinimaginable
     uri: https://gitlab.ilearned.eu/i-learned/blog
-  ci_cd:
-    name: 🔄 CI/CD
-    contributors: Eban, Ramle
+  infra:
+    name: ⌨️ Infrastructure
     uri: https://gitlab.ilearned.eu/i-learned/ci-cd
   design:
     name: 🖌️ Design system
-    contributors: Eban, llaq
     uri: https://gitlab.ilearned.eu/i-learned/design-system
   labs:
     name: 🖥️ Labs
-    contributors: Eban, llaq, Ownesis
     uri: https://gitlab.ilearned.eu/i-learned/lab
   website:
     name: 🌐 Site vitrine
-    contributors: Eban, Ramle
     uri: https://gitlab.ilearned.eu/i-learned/website
   wiki:
     name: 📄 Wiki
-    contributors: Eban
     uri: https://gitlab.ilearned.eu/i-learned/wiki
 
 contributors:
   Eban:
     uri: https://eban.eu.org
-    image: /static/img/contributors/eban.svg
+    image: https://cdn.ilearned.eu/img/contributors/eban.webp
+    projects: blog, infra, design, labs, website, wiki
   Ramle:
     uri: https://ramle.be
-    image: /static/img/contributors/ramle.webp
+    image: https://cdn.ilearned.eu/img/contributors/ramle.webp
+    projects: blog, infra, website
   llaq:
     uri: https://lelibreauquotidien.fr/
-    image: /static/img/contributors/llaq.webp
+    image: https://cdn.ilearned.eu/img/contributors/llaq.webp
+    projects: design, labs
   Lancelot:
     uri: https://theredwindows.net/
-    image: /static/img/contributors/lancelot.webp
+    image: https://cdn.ilearned.eu/img/contributors/lancelot.webp
+    projects: blog
   MorpheusH3x:
     uri: https://twitter.com/MorpheusH3x
-    image: /static/img/contributors/morpheush3x.webp
+    image: https://cdn.ilearned.eu/img/contributors/morpheush3x.webp
+    projects: blog
   Ownesis:
     uri: https://github.com/ownesis
-    image: /static/img/contributors/ownesis.webp
+    image: https://cdn.ilearned.eu/img/contributors/ownesis.webp
+    projects: blog, labs
   Immae:
     uri: https://www.immae.eu/
-    image: /static/img/contributors/immae.webp
+    image: https://cdn.ilearned.eu/img/contributors/immae.webp
+    projects: infra
   Outout:
     uri: https://enpls.org/
-    image: /static/img/contributors/outout.webp
+    image: https://cdn.ilearned.eu/img/contributors/outout.webp
+    projects: infra
   Rick:
     uri: https://gyiwr.tf/
-    image: /static/img/contributors/rick.webp
-  Akinimaginable:
-    uri: https://github.com/Akinimaginable
-    image: /static/img/contributors/akinimaginable.webp
+    image: https://cdn.ilearned.eu/img/contributors/rick.webp
+    projects: blog

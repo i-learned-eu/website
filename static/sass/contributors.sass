@@ -1,57 +1,23 @@
-h1
-  text-align: center
-  margin: 70px 0 20px 0
-  font-size: 40px
-  word-wrap: break-word
-
-main
-  margin: 0 100px
-
 .contributors
   display: flex
-  justify-content: space-around
+  gap: 50px
   flex-wrap: wrap
-  .cardContainer
-    margin-top: 50px
-    width: min-content
-    display: inline-block
-    vertical-align: top
-    .btn
-      text-transform: capitalize
-      margin: 40px auto
-    .card
-      width: 500px
-      padding: 30px
-      h2
-        text-align: center
-        margin-bottom: 30px
-      .contributorsContainer
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-      .contributor
-        margin: 10px
-        display: inline
-        width: calc(50% - 20px)
-        img
-          height: 48px
-          border-radius: 10px
-          vertical-align: middle
-        a
-          color: var(--text-color)
-          vertical-align: middle
-          font-size: 17px
-          margin-left: 10px
-
-@media only screen and (max-width: 1060px)
-  main
-    margin: 0 20px
-    h1
-      font-size: 28px
-  .contributors .cardContainer .card
-    margin-right: 0
-    width: 85vw
-    padding: 25px 15px 15px 15px
-    margin-left: -5px
-    .contributor
-      width: 100%
+  padding-bottom: 20px
+  .card
+    width: max-content
+    padding: 15px 25px
+    height: max-content
+    h2
+      text-align: center
+      margin: 10px 0 20px 0
+      img
+        width: 40px
+        border-radius: 10px
+      a
+        margin-left: 3px
+        font-weight: 500
+      img, a
+        vertical-align: middle
+    .contribution
+      margin-bottom: 7px
+      font-size: 18px
