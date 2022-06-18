@@ -1,6 +1,10 @@
 <section id="projects">
   <h1>💻 {% trans %}Projets{% endtrans %}</h1>
-  <p>{% trans %}Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci sont distribués sous licence libre, principalement CC-BY-NC-SA pour les contenus et AGPL pour le code.{% endtrans %}</p>
+  <p>
+    {% trans %}Vous trouverez ci-dessous la liste de tous nos projets. Ceux-ci
+    sont distribués sous licence libre, principalement CC-BY-NC-SA pour les
+    contenus et AGPL pour le code.{% endtrans %}
+  </p>
   <div class="projects">
     {% for project in projects %}
     <div class="cardContainer">
@@ -16,6 +20,7 @@
   </div>
   <p>{{ projects[project].description }}</p>
   <a href="{{ projects[project].uri }}" class="btn btn-secondary"
-    >👉 {{ project }}</a>
-{% endfor %}
+    >👉 {{ project }}</a
+  >
+  {% endfor %}
 </section>
