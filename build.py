@@ -1,4 +1,3 @@
-from staticjinja import Site
 from jinja2 import Environment, FileSystemLoader
 from distutils.dir_util import copy_tree
 import yaml
@@ -12,7 +11,7 @@ if os.path.exists("output") and os.path.isdir("output"):
     shutil.rmtree("output")
 with open("./data.yml", 'r') as data:
     try:
-        parsedData = yaml.safe_load(data)
+        data = yaml.safe_load(data)
         locale_dir = "translations"
         msgdomain = "html"
         list_of_desired_locales = ["en"]
@@ -21,11 +20,10 @@ with open("./data.yml", 'r') as data:
 
         translations = Translations.load(locale_dir, list_of_desired_locales)
         env = Environment(extensions=extensions, loader=loader)
-        env.make_globals(parsedData)
         env.install_gettext_translations(translations)
 
         template = env.get_template("index.html")
-        rendered_template = template.render()
+        rendered_template = template.render(data)
         os.mkdir("output")
         indexFile = open("output/index.html", "a")
         indexFile.write(rendered_template)

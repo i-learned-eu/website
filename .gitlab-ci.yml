@@ -5,7 +5,8 @@ default:
 
 stages:
   - lint
-  - deploy
+  - build
+  - prod-deploy
 
 linter:
   stage: lint
@@ -25,7 +26,7 @@ linter:
     - main
 
 prod-deploy-job:
-  stage: deploy
+  stage: prod-deploy
   image: hub.ilearned.eu/i-learned/ci-cd/website-builder
   script:
     - python3 build.py
@@ -38,6 +39,19 @@ prod-deploy-job:
     - chmod 600 ~/.ssh/id_ed25519
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     - rsync -az --exclude=".git*" --delete -e "ssh -p 22 -i ~/.ssh/id_ed25519" output/ deploy@eban.eu.org:/var/www/ilearned
+
+  only:
+    - main
+
+  artifacts:
+    paths:
+      - output
+
+build-job:
+  stage: build
+  image: hub.ilearned.eu/i-learned/ci-cd/website-builder
+  script:
+    - python3 build.py
 
   only:
     - main
