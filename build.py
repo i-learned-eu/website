@@ -17,8 +17,7 @@ with open("./data.yml", 'r') as data:
         msgdomain = "html"
         list_of_desired_locales = ["en"]
         loader = FileSystemLoader("templates")
-        extensions = ['jinja2.ext.i18n',
-                      'jinja2.ext.autoescape', 'jinja2.ext.with_']
+        extensions = ['jinja2.ext.i18n']
 
         translations = Translations.load(locale_dir, list_of_desired_locales)
         env = Environment(extensions=extensions, loader=loader)
