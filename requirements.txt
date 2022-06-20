@@ -1,8 +1,9 @@
-docopt-ng==0.7.2
-easywatch==0.0.5
-Jinja2==3.0.3
-MarkupSafe==2.1.1
-PyYAML==6.0
-staticjinja==4.1.2
-watchdog==2.1.6
+docopt-ng
+easywatch
+Jinja2
+MarkupSafe
+PyYAML
+staticjinja
+watchdog
 libsass
+Babel
