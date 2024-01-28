@@ -1,6 +1,5 @@
 # coding=utf-8
 from jinja2 import Environment, FileSystemLoader
-from distutils.dir_util import copy_tree
 import yaml
 import sass
 import os
@@ -29,7 +28,7 @@ with open("./data.yml", 'r') as data:
         indexFile = open("output/index.html", "a")
         indexFile.write(rendered_template)
         os.mkdir("output/static")
-        copy_tree("static", "output/static")
+        shutil.copytree("static", "output/static", dirs_exist_ok=True)
         sass.compile(dirname=('output/static/sass',
                      'output/static/css'), output_style='compressed')
         shutil.rmtree("output/static/sass")
