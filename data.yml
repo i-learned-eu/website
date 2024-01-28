@@ -41,9 +41,9 @@ contributors:
     uri: https://eban.eu.org
     image: https://cdn.ilearned.eu/img/contributors/eban.webp
     projects: blog, infra, design, labs, website, wiki
-  Elmar:
-    uri: https://ramle.be
-    image: https://cdn.ilearned.eu/img/contributors/elmar.webp
+  Ada:
+    uri: https://ada.wf
+    image: https://cdn.ilearned.eu/img/contributors/ada.webp
     projects: blog, infra, website
   llaq:
     uri: https://lelibreauquotidien.fr/
