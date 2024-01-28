@@ -3,3 +3,5 @@ venv/
 *.css
 *.css.map
 .sass-cache
+.vercel
+.idea

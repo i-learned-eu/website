@@ -1,3 +1,4 @@
+# coding=utf-8
 from jinja2 import Environment, FileSystemLoader
 from distutils.dir_util import copy_tree
 import yaml
